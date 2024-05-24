@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-file Upload System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Multi-file Upload System</h1>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="files" multiple>
+    <button type="submit">Upload</button>
+  </form>
+  <button id="viewAll">View All</button>
+  <div id="fileList"></div>
+  <button id="downloadSelected">Download Selected</button>
+  <button id="downloadAll">Download All</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
